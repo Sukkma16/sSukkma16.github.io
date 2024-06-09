@@ -24,4 +24,13 @@
   Informasi Pengirim               Jasa Pengiriman (Kurir) : Sicepat - Reguler Package
 
 
+  Kardinalitas       
+
+  Penjual    -> Invoice           : 1:N
+  Pembeli    -> Invoice           : 1:N
+  Produk     -> Invoice           : 1:N
+  Pengiriman -> Invoice           : 1:1
+  Kurir      -> Pengiriman        : 1:N
+  Invoice    -> Total Pembayaran  : 1:1
+
 
